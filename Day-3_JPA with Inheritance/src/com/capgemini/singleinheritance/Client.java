@@ -1,0 +1,40 @@
+package com.capgemini.singleinheritance;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class Client 
+{
+
+	public static void main(String[] args) 
+	{
+		EntityManagerFactory factory=Persistence.createEntityManagerFactory("JPA-PU");
+		EntityManager em=factory.createEntityManager();
+		em.getTransaction().begin();
+		
+		//create an employee1
+		Employee e=new Employee();
+		e.setName("Jitesh");
+		e.setSalary(55000);
+		em.persist(e);
+		
+		//create an employee1
+		Employee e1=new Employee();
+		e1.setName("Apeksha");
+		e1.setSalary(45000);
+		em.persist(e1);
+				
+		//create a manager
+		Manager m=new Manager();
+		m.setName("Samir");
+		m.setSalary(80000);
+		m.setDeptname("Information Technology");
+		em.persist(m);
+				
+		em.getTransaction().commit();
+		System.out.println("The data is added");
+		em.close();
+		factory.close(); 
+	}
+}
