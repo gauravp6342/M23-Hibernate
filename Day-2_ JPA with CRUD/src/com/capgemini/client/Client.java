@@ -14,9 +14,9 @@ public class Client {
 		/*//create operation
 		s.setRollno(1320);
 		s.setName("Ajay");
-		service.addStudent(s);*/
+		service.addStudent(s);
 
-		/*//create operation
+		//create operation
 		s.setRollno(1335);
 		s.setName("Tirth");
 		service.addStudent(s);*/
@@ -34,6 +34,6 @@ public class Client {
 		//delete
 		s=service.getStudentById(1320);
 		service.deleteStudent(s);
-		System.out.println("Data is deleted");   
+		System.out.println("Data is deleted");  
 	}
 }
