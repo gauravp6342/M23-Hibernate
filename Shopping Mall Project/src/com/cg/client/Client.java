@@ -39,8 +39,6 @@ public class Client
 		
 		userService.addNewUser(user);
 		
-		System.out.println("Data Is Inserted");
-		
 		Shop shop= new Shop();
 		ShopService shopService = new ShopServiceImpl();
 		shop.setShop_Id(12);
@@ -59,6 +57,9 @@ public class Client
 		
 	    employeeService.updateEmployee(employee);
 		shopService.updateShop(shop);
+		
+		System.out.println("Data Is Inserted");
+		System.out.println("");
 		
 		Customer customer= new Customer();
 		CustomerService customerService = new CustomerServiceImpl();

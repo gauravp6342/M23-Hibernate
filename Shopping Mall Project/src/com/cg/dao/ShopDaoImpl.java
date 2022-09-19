@@ -35,6 +35,7 @@ public class ShopDaoImpl implements ShopDao
 		@Override
 		public void commitTransaction() {
 			em.getTransaction().commit();
+			
 		}
 		@Override
 		public void beginTransaction() {
