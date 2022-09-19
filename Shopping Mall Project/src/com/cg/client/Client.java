@@ -1,5 +1,6 @@
 package com.cg.client;
 
+
 import com.cg.entities.Admin;
 import com.cg.entities.Customer;
 import com.cg.entities.Employee;
@@ -22,7 +23,7 @@ public class Client
 	public static void main(String[] args) 
 	{
 		User user = new User();
-		UserService service = new UserServiceImpl();
+		UserService userService = new UserServiceImpl();
 		user.setUser_Id(111);
 		user.setName("hariom");
 		user.setType("System User");
@@ -37,7 +38,9 @@ public class Client
 		user.setAdmin(admin);
 		admin.setUser(user);
 		
-		service.addNewUser(user);
+		userService.addNewUser(user);
+		
+		System.out.println("Data Is Inserted");
 		
 		Shop shop= new Shop();
 		ShopService shopService = new ShopServiceImpl();
@@ -58,26 +61,23 @@ public class Client
 	    employeeService.updateEmployee(employee);
 		shopService.updateShop(shop);
 		
-		System.out.println("Data Is Inserted");
-		System.out.println("");
-		
 		Customer customer= new Customer();
-		//CustomerService customerService = new CustomerServiceImpl();
+		CustomerService customerService = new CustomerServiceImpl();
 		customer.setCust_id(65);
 		customer.setCust_name("Gaurav Patil");
 		customer.setPhone("9826713405");
 		customer.setEmail("ajay988@gmail.com");
 		
 		Order order = new Order();
-		//OrderService orderService = new OrderServiceImpl();
+		OrderService orderService = new OrderServiceImpl();
 		order.setOrder_id(7985623);
 		order.setTotal(10500.02f);
 		order.setLdt(null);
 		order.setPaymentMode("Online");
 		
-		//orderService.updateOrder(order);
-		//customerService.updateCustomer(customer);
-		
+		orderService.updateOrder(order);
+		customerService.updateCustomer(customer);
+
 		System.out.println("Data Is Updated");
 	}
 }

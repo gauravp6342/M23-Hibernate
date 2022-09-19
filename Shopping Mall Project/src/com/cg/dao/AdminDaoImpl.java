@@ -34,10 +34,10 @@ public class AdminDaoImpl implements AdminDao
 	}
 	@Override
 	public void commitTransaction() {
-		em.getTransaction().commit();
-		}
+		em.getTransaction().commit();	
+	}
 	@Override
 	public void beginTransaction() {
-		em.getTransaction().begin();
-		}
+		em.getTransaction().begin();	
+	}
 }

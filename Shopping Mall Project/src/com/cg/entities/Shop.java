@@ -1,5 +1,6 @@
 package com.cg.entities;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,7 +18,7 @@ public class Shop
 	private String shopname;
     private String shopstatus;
     private String leaseStatus;
-    
+        
     //Getter And Setter
 	public int getShop_Id() {
 		return Shop_Id;

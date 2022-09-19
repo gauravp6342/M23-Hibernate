@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 
 import com.cg.entities.User;
 
-public class UserDaoImpl implements UserDao
+public class UserDaoImpl  implements UserDao
 {
     private EntityManager em ;
     
@@ -30,9 +30,9 @@ public class UserDaoImpl implements UserDao
 	@Override
 	public void commitTransaction() {
 		em.getTransaction().commit();
-		}
+	}
 	@Override
 	public void beginTransaction() {
 		em.getTransaction().begin();
-		}
+	}
 }

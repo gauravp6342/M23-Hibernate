@@ -9,8 +9,7 @@ public class AdminServiceImpl implements AdminService
 	 private AdminDao dao ;
 	 public AdminServiceImpl(){
 		 super();
-		 dao = new AdminDaoImpl();
-		 
+		 dao = new AdminDaoImpl();	 
 	 }
 	@Override
 	public boolean approveNewShop(Admin admin) {

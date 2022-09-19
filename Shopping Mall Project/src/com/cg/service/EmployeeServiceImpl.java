@@ -9,8 +9,8 @@ public class EmployeeServiceImpl implements EmployeeService
 	private EmployeeDao dao ;
 	 public EmployeeServiceImpl(){
 		 super();
-		 dao = new EmployeeDaoImpl();
-		 }
+		 dao = new EmployeeDaoImpl();	 
+	 }
 	@Override
 	public Employee addEmployee(Employee employee) {
 		dao.beginTransaction();

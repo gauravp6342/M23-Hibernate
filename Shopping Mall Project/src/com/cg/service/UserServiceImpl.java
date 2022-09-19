@@ -34,5 +34,5 @@ public class UserServiceImpl implements UserService
 	public boolean logout() {
 		
 		return false;
-	} 
+	}
 }
