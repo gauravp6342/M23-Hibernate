@@ -1,6 +1,5 @@
 package com.cg.client;
 
-
 import com.cg.entities.Admin;
 import com.cg.entities.Customer;
 import com.cg.entities.Employee;
@@ -78,6 +77,6 @@ public class Client
 		orderService.updateOrder(order);
 		customerService.updateCustomer(customer);
 
-		System.out.println("Data Is Updated");
+		System.out.println("Data Is Updated");				
 	}
 }
