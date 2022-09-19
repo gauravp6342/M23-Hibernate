@@ -62,21 +62,21 @@ public class Client
 		System.out.println("");
 		
 		Customer customer= new Customer();
-		CustomerService customerService = new CustomerServiceImpl();
+		//CustomerService customerService = new CustomerServiceImpl();
 		customer.setCust_id(65);
 		customer.setCust_name("Gaurav Patil");
 		customer.setPhone("9826713405");
 		customer.setEmail("ajay988@gmail.com");
 		
 		Order order = new Order();
-		OrderService orderService = new OrderServiceImpl();
+		//OrderService orderService = new OrderServiceImpl();
 		order.setOrder_id(7985623);
 		order.setTotal(10500.02f);
 		order.setLdt(null);
 		order.setPaymentMode("Online");
 		
-		orderService.updateOrder(order);
-		customerService.updateCustomer(customer);
+		//orderService.updateOrder(order);
+		//customerService.updateCustomer(customer);
 		
 		System.out.println("Data Is Updated");
 	}
